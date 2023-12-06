@@ -6,8 +6,6 @@ import ast
 # Load your dataset with topics
 data = pd.read_csv('../data/school_student_ratings_with_topics.csv')
 
-# Assuming you have an 'Average Rating' column that represents the rating levels (e.g., 1 to 5)
-# You can customize this based on your dataset structure
 rating_col = 'Average Rating'
 
 # Convert the 'Topics' column from string to a list of tuples
