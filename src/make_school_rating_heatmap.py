@@ -2,7 +2,6 @@ import folium
 import pandas as pd
 from branca.colormap import LinearColormap
 
-# Load your school ratings data CSV
 ratings_data = pd.read_csv('../data/school_rating_distribution.csv')
 # filter schools with less than 10 ratings
 ratings_data = ratings_data[ratings_data['Total Ratings'] >= 10]

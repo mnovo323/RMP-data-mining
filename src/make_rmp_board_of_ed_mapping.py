@@ -33,7 +33,6 @@ with open('../data/rmp_board_of_ed_mapping.csv', 'w') as f:
     for school_id, school_name in schools.items():
         # Find the best match for school_name in boe values
         best_match, similarity = process.extractOne(school_name, boe.values())
-        # You can adjust the threshold based on how close a match you want
         if similarity > 95:  # Assuming a similarity threshold of 95%
             # Find the key (boe_id) for the matched value (best_match)
             boe_id = next(key for key, value in boe.items() if value == best_match)
